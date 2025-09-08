@@ -64,6 +64,7 @@ exclude = [
 bitflags = "2.9.3"
 derive-where = "1.6.0"
 either = "1.15.0"
+find-msvc-tools = "0.1"
 indexmap = "2.10.0"
 itertools = "0.12.1"
 # FIXME: Remove this pin once this rustix issue is resolved
