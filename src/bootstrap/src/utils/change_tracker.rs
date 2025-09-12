@@ -491,4 +491,9 @@ pub const CONFIG_CHANGE_HISTORY: &[ChangeInfo] = &[
         severity: ChangeSeverity::Warning,
         summary: "Added `build.compiletest-allow-stage0` flag instead of `COMPILETEST_FORCE_STAGE0` env var, and reject running `compiletest` self tests against stage 0 rustc unless explicitly allowed.",
     },
+    ChangeInfo {
+        change_id: 146663,
+        severity: ChangeSeverity::Info,
+        summary: "New option `build.windows-rc` that will override which resource compiler on Windows will be used to compile Rust.",
+    },
 ];

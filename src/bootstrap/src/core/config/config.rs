@@ -269,6 +269,7 @@ pub struct Config {
     pub gdb: Option<PathBuf>,
     pub lldb: Option<PathBuf>,
     pub python: Option<PathBuf>,
+    pub windows_rc: Option<PathBuf>,
     pub reuse: Option<PathBuf>,
     pub cargo_native_static: bool,
     pub configure_args: Vec<String>,
@@ -726,6 +727,7 @@ impl Config {
             nodejs,
             npm,
             python,
+            windows_rc,
             reuse,
             locked_deps,
             vendor,
@@ -878,6 +880,7 @@ impl Config {
         config.gdb = gdb.map(PathBuf::from);
         config.lldb = lldb.map(PathBuf::from);
         config.python = python.map(PathBuf::from);
+        config.windows_rc = windows_rc.map(PathBuf::from);
         config.reuse = reuse.map(PathBuf::from);
         config.submodules = submodules;
         config.android_ndk = android_ndk;
